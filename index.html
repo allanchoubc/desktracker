@@ -155,37 +155,25 @@ Intro to APIs
         </div>
       </section>
 
-    </div><!-- .slides -->
+		<script src="js/reveal.js"></script>
 
-  </div><!-- .reveal -->
-
-  <!-- not needed since 3.8.0 -->
-  <!-- script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/head.min.js"><script -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.min.js"></script>
-  <script>
-    // Full list of configuration options available at:
-    // https://github.com/hakimel/reveal.js#configuration
-    Reveal.initialize({
-      controls: false,
-      progress: false,
-      history: true,
-      center: true,
-      overview: false,
-      loop: false,
-
-      transition: 'zoom', // none/fade/slide/convex/concave/zoom
-
-      // Optional reveal.js plugins, loaded from jsDelivr
-      dependencies: [
-        { src: srcUrlPrefix + 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
-        { src: srcUrlPrefix + 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-        { src: srcUrlPrefix + 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-        { src: srcUrlPrefix + 'plugin/highlight/highlight.js', async: true, condition: function () { return !!document.querySelector('pre code'); }, callback: function () { hljs.initHighlightingOnLoad(); } },
-        { src: srcUrlPrefix + 'plugin/zoom-js/zoom.js', async: true },
-        { src: srcUrlPrefix + 'plugin/notes/notes.js', async: true }
-      ]
-    });
-  </script>
-</body>
-
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
 </html>
