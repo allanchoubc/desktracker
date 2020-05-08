@@ -1,7 +1,5 @@
-# Using Desktracker
- ### UBC Library Research Commons
- Link to workshop: https://allanchoubc.github.io/desktracker
-
- ### This presentation is an introduction of Desktracker
-
-  
+---
+ layout: default
+ title: Introduction to simple HTML presentations with Reveal.js
+ nav_order: 1
+---
